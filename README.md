@@ -6,7 +6,7 @@
 <p align="left"> <a href="https://twitter.com/kandie_collins" target="blank"><img src="https://img.shields.io/twitter/follow/kandie_collins?logo=twitter&style=for-the-badge" alt="kandie_collins" /></a> </p>
 
 
-<img width=100% src="https://github-profile-trophy.vercel.app/?username=collinskandie&column=7"/>
+<img width=100% src="https://github-profile-trophy.vercel.app/?username=collinskandie&column=10"/>
 <!--Trophies-->
 
 <img width="300px" length="400px" align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=collinskandie&&show_icons=true&title_color=000000&icon_color=2A75CF&text_color=000000&bg_color=ffffff"/> <br/>
@@ -15,7 +15,7 @@
 [![organism:human](https://img.shields.io/badge/organism-human-%238D5524)](https://img.shields.io/badge/organism-human-%238D5524)
 [![life:passing](https://img.shields.io/badge/life%20-passing-%2335B142)](https://img.shields.io/badge/life%20-passing-%2335B142)
 [![workload:99%](https://img.shields.io/badge/work--load-99%25-%23CF692A)](https://img.shields.io/badge/work--load-99%25-%23CF692A)
-[![social-life:inavtive](https://img.shields.io/badge/social--life-inactive-lightgrey)](https://img.shields.io/badge/social--life-inactive-lightgrey)
+[![social-life:inavtive](https://img.shields.io/badge/social--life-active-lightgrey)](https://img.shields.io/badge/social--life-active-lightgrey)
 
 
 <h4>Hey check out <a href="https://collinskandieportfolio.web.app">My PORTFOLIO</a></h4>
