@@ -6,7 +6,7 @@
 <p align="left"> <a href="https://twitter.com/kandie_collins" target="blank"><img src="https://img.shields.io/twitter/follow/kandie_collins?logo=twitter&style=for-the-badge" alt="kandie_collins" /></a> </p>
 
 
-<img width=100% src="https://github-profile-trophy.vercel.app/?username=collinskandie&column=10"/>
+<img width=100% src="https://github-profile-trophy.vercel.app/?username=collinskandie&column=6"/>
 <!--Trophies-->
 
 <img width="300px" length="400px" align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=collinskandie&&show_icons=true&title_color=000000&icon_color=2A75CF&text_color=000000&bg_color=ffffff"/> <br/>
