@@ -1,5 +1,5 @@
 ## 2021#365DayCommitChallenge
-![collinskoech11's GitHub Stats.](https://github-readme-stats.vercel.app/api?username=collinskandie&&show_icons=true&title_color=ffffff&icon_color=2A75CF&text_color=daf7dc&bg_color=191919)
+![collinskandie's GitHub Stats.](https://github-readme-stats.vercel.app/api?username=collinskandie&&show_icons=true&title_color=ffffff&icon_color=2A75CF&text_color=daf7dc&bg_color=191919)
 <!--github anual stats-->
 
 
@@ -12,16 +12,9 @@
 <img width="300px" length="400px" align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=collinskandie&&show_icons=true&title_color=000000&icon_color=2A75CF&text_color=000000&bg_color=ffffff"/> <br/>
 <!--Most Used Languages-->
 
-[![organism:human](https://img.shields.io/badge/organism-human-%238D5524)](https://img.shields.io/badge/organism-human-%238D5524)
-[![life:passing](https://img.shields.io/badge/life%20-passing-%2335B142)](https://img.shields.io/badge/life%20-passing-%2335B142)
-[![workload:99%](https://img.shields.io/badge/work--load-99%25-%23CF692A)](https://img.shields.io/badge/work--load-99%25-%23CF692A)
-[![social-life:inavtive](https://img.shields.io/badge/social--life-active-lightgrey)](https://img.shields.io/badge/social--life-active-lightgrey)
 
 
 <h4>Hey check out <a href="https://collinskandieportfolio.web.app">My PORTFOLIO</a></h4>
-<h4><a href="https://commits.top/kenya.html">Top Kenyan Contributors</a></h4>
-
-
 
 ## Technology & Tools
 
