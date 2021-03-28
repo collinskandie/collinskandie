@@ -9,7 +9,7 @@
 <img width=100% src="https://github-profile-trophy.vercel.app/?username=collinskandie&column=6"/>
 <!--Trophies-->
 
-<img width="300px" length="400px" align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=collinskandie&&show_icons=true&title_color=000000&icon_color=2A75CF&text_color=000000&bg_color=ffffff"/> <br/>
+<img width="300px" length="auto" align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=collinskandie&&show_icons=true&title_color=000000&icon_color=2A75CF&text_color=000000&bg_color=ffffff"/> <br/>
 <!--Most Used Languages-->
 
 
