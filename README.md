@@ -25,3 +25,5 @@
 <a href="https://www.linkedin.com/in/collins-kandie-0929b81aa/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="anvesh duddu" height="30" width="40" /></a>
 
 <a href="https://profile-counter.glitch.me/collinskandie/count.svg"><p align="center"> Visitor count<br> <img src="https://profile-counter.glitch.me/collinskandie/count.svg" /></a>
+
+![](https://activity-graph.herokuapp.com/graph?username=collinskandie&theme=react-dark)
