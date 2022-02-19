@@ -13,6 +13,8 @@
 <!--Most Used Languages-->
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=collinskandie&langs_count=8)](https://github.com/collinskandie/github-readme-stats)
 <!--wakatime stats-->
+[![wakatime](https://wakatime.com/badge/user/d4dca390-d82e-4af6-a51e-279cff40773e.svg)](https://wakatime.com/@d4dca390-d82e-4af6-a51e-279cff40773e)
+
 [![collinskandie's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=collinskandie)](https://github.com/collinskandie/github-readme-stats)
 
 
