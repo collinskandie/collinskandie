@@ -1,4 +1,4 @@
-## Collins Kandie.
+## Collins Kipruto.
 [![Collinskandie GitHub stats](https://github-readme-stats.vercel.app/api?username=collinskandie&count_private=true&show_icons=true)](https://github.com/collinskandie/github-readme-stats)
 <!--github anual stats-->
 
@@ -30,4 +30,3 @@
 
 <a href="https://profile-counter.glitch.me/collinskandie/count.svg"><p align="center"> Visitor count<br> <img src="https://profile-counter.glitch.me/collinskandie/count.svg" /></a>
 
-![](https://activity-graph.herokuapp.com/graph?username=collinskandie&theme=react-dark)
