@@ -1,5 +1,4 @@
 ## Collins Kipruto.
-[![Collinskandie GitHub stats](https://github-readme-stats.vercel.app/api?username=collinskandie&count_private=true&show_icons=true)](https://github.com/collinskandie/github-readme-stats)
 <!--github anual stats-->
 
 
