@@ -1,4 +1,4 @@
-## Collins Kipruto.
+## Collins Kipruto
 <!--github anual stats-->
 
 
