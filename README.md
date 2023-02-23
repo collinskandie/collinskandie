@@ -1,6 +1,5 @@
 ## Collins Kipruto
 <!--github anual stats-->
-
 [![wakatime](https://wakatime.com/badge/user/d4dca390-d82e-4af6-a51e-279cff40773e.svg)](https://wakatime.com/@d4dca390-d82e-4af6-a51e-279cff40773e)
 
 <h4>Hey check out my <a href="https://collinskandie.com">Portfolion</a></h4>
