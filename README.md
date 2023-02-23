@@ -4,6 +4,5 @@
 
 <h4>Hey check out my <a href="https://collinskandie.com">Portfolion</a></h4>
 
-![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=collinskandie&theme=dark&background=000000)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=collinskandie&layout=compact&theme=vision-friendly-dark)
