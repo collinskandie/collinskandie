@@ -1,4 +1,4 @@
-## Collins Kipruto
+## Collins Kipruto Kiptoo (Kandie)
 <!--github anual stats-->
 [![wakatime](https://wakatime.com/badge/user/d4dca390-d82e-4af6-a51e-279cff40773e.svg)](https://wakatime.com/@d4dca390-d82e-4af6-a51e-279cff40773e)
 
