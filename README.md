@@ -4,7 +4,7 @@
 
 
 
-<h4>Hey check out my <a href="https://collinskandie.com">Portfolion</a></h4>
+<h4>Hey check out my <a href="https://collinskandie.github.io/collinskandie/">Portfolion</a></h4>
 
 
 
