@@ -2,8 +2,6 @@
 
 ## Collins Kipruto Kiptoo (Kandie)
 
-[![GitHub Streak](https://streak-stats.demolab.com/?user=collinskandie)](https://git.io/streak-stats)
-<!--github anual stats-->
 [![wakatime](https://wakatime.com/badge/user/d4dca390-d82e-4af6-a51e-279cff40773e.svg)](https://wakatime.com/@d4dca390-d82e-4af6-a51e-279cff40773e)
 
 
