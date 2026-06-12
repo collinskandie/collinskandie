@@ -1,139 +1,668 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:site_name" content="Collins Kandie" />
+
+    <!-- SEO / OG -->
+    <meta name="description" content="Collins Kipruto Kiptoo — Full-Stack Software Engineer based in Nairobi, Kenya. 4+ years building web apps, APIs, and cloud systems. Open to remote." />
+    <meta name="author" content="Collins Kipruto Kiptoo" />
+    <meta property="og:title" content="Collins Kiptoo | Full-Stack Software Engineer" />
+    <meta property="og:description" content="Full-Stack Software Engineer with 4+ years in healthcare, agriculture, and enterprise systems. React, Node.js, Spring Boot, AWS, Azure." />
+    <meta property="og:type" content="website" />
     <meta property="og:image" content="IMG_4200.jpeg" />
+    <meta property="og:site_name" content="Collins Kiptoo" />
 
-    <!-- Linkedin Details -->
-    <meta name="description" content="Personal Website" />
-    <meta name="title" property="og:title" content="Collins Kandie" />
-    <meta property="og:type" content="Website" />
-    <meta
-      name="image"
-      property="og:image"
-      content="https://github.com/collinskandie/collinskandie.git/main/IMG_4200.jpeg"
-    />
-    <meta
-      name="description"
-      property="og:description"
-      content="Collins Kandie profile"
-    />
-    <meta name="author" content="Collins Kandie" />
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <meta name="theme-color" content="#f5f7fa" id="theme-color-meta" />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-      crossorigin="anonymous"
-    />
+    <title>Collins Kiptoo | Full-Stack Software Engineer</title>
+
+    <!-- Theme: apply before CSS to prevent flash -->
+    <script>
+      (function() {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Custom styles -->
     <link rel="stylesheet" href="custom.css" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io/favicon-16x16.png"
-    />
-    <link rel="icon" type="image/png" href="favicon_io/favicon-16x16.png" />
-    <link rel="manifest" href="favicon_io/site.webmanifest" />
-    <meta name="theme-color" content="#ffffff" />
-
-    <title>Collins Kiptoo - (Kandie)</title>
-
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-120900637-1"
-    ></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120900637-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag(){ dataLayer.push(arguments); }
       gtag("js", new Date());
       gtag("config", "UA-120900637-1");
     </script>
-    <script src="https://kit.fontawesome.com/6268ce1b48.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <div class="row center center-cell">
-      <div class="col-md-6" align="center">
-        <!-- Name -->
-        <h1>Collins Kiptoo - (Kandie)</h1>
 
-        <div>
-          <!-- Instagram -->
-          <a href="https://www.instagram.com/c.kandie_/">
-            <img
-              src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
-            />
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <a class="navbar-brand" href="#hero">CK</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <i id="theme-icon" class="fa-solid fa-sun"></i>
+          <span id="theme-label">Light</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 hero-text">
+            <p class="hero-subtitle">Hi, I'm</p>
+            <h1>Collins <span>Kipruto</span> Kiptoo</h1>
+            <p class="hero-subtitle" style="font-size:1.25rem; margin-top:0.5rem;">Full-Stack Software Engineer</p>
+            <p class="hero-location">
+              <i class="fa-solid fa-location-dot"></i> Nairobi, Kenya
+              &nbsp;<span style="color:var(--border);">|</span>&nbsp;
+              <i class="fa-solid fa-globe" style="color:var(--accent);"></i> Open to remote
+            </p>
+
+            <div class="hero-links">
+              <a href="https://github.com/collinskandie" target="_blank">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/collins-kiptoo-0929b81aa/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="mailto:collinskandie1@gmail.com">
+                <i class="fa-solid fa-envelope"></i> Email
+              </a>
+              <a href="https://www.instagram.com/c.kandie_/" target="_blank">
+                <i class="fa-brands fa-instagram"></i> Instagram
+              </a>
+            </div>
+
+            <a href="./Collins_Kiptoo_FullStack_CV.pdf" class="hero-cta" target="_blank">
+              <i class="fa-solid fa-file-arrow-down"></i>&nbsp; Download CV
+            </a>
+          </div>
+
+          <div class="col-md-5 hero-img-wrap">
+            <img src="IMG_4200.jpeg" alt="Collins Kipruto Kiptoo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Professional summary</p>
+        <div class="row">
+          <div class="col-md-8">
+            <p>
+              Full-Stack Software Engineer with <strong style="color:#fff;">4+ years</strong> building web applications
+              end to end — responsive front-ends, scalable APIs, robust databases, and cloud deployments.
+              Experienced across <strong style="color:#fff;">healthcare, agriculture, and enterprise systems</strong>,
+              having delivered ERP platforms, traceability systems, and laboratory information management software.
+            </p>
+            <p style="margin-top:1rem;">
+              Comfortable across React and Angular on the front-end; Node.js, Python, and Java (Spring Boot) on the
+              back-end; with PostgreSQL, MySQL, and MongoDB, deployed on AWS and Azure using Docker and Kubernetes.
+              I deliver clean, testable, maintainable code and collaborate closely with cross-functional teams.
+            </p>
+            <p style="margin-top:1rem;">
+              Currently pursuing an <strong style="color:#fff;">MSc in Artificial Intelligence</strong> at
+              The Open University of Kenya, deepening my expertise in machine learning, deep learning, and NLP.
+            </p>
+          </div>
+          <div class="col-md-4 mt-4 mt-md-0">
+            <div class="skill-category" style="height:100%;">
+              <h5>Quick Facts</h5>
+              <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:0.6rem;">
+                <i class="fa-solid fa-briefcase" style="color:var(--accent); width:20px;"></i>
+                4+ years professional experience
+              </p>
+              <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:0.6rem;">
+                <i class="fa-solid fa-graduation-cap" style="color:var(--accent); width:20px;"></i>
+                MSc AI (in progress) &amp; BSc CS
+              </p>
+              <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:0.6rem;">
+                <i class="fa-solid fa-hospital" style="color:var(--accent); width:20px;"></i>
+                Healthcare · Agriculture · Enterprise
+              </p>
+              <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:0.6rem;">
+                <i class="fa-solid fa-cloud" style="color:var(--accent); width:20px;"></i>
+                AWS · Azure · GCP · Docker · K8s
+              </p>
+              <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:0;">
+                <i class="fa-solid fa-globe" style="color:var(--accent); width:20px;"></i>
+                Open to remote opportunities
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">Where I've worked</p>
+
+        <div class="timeline">
+
+          <!-- MTRH -->
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div>
+                  <div class="tl-role">ICT Officer (Software Engineer)</div>
+                  <div class="tl-company">Moi Teaching and Referral Hospital &mdash; Eldoret, Kenya</div>
+                </div>
+                <span class="tl-period">Jun 2025 &ndash; Present</span>
+              </div>
+              <ul>
+                <li><strong>LIMS</strong> &mdash; Enhanced the Laboratory Information Management System, improving sample tracking and reducing lab reporting turnaround time by ~30%.</li>
+                <li><strong>ERP Modules</strong> &mdash; Built and deployed backend ERP modules across finance, HR, and inventory, plus clinical and administrative workflows for hospital-wide operations.</li>
+                <li><strong>Reliability</strong> &mdash; Provided ongoing system support and optimisation, reducing downtime and improving data reliability for hospital-wide decision-making.</li>
+                <li><strong>Collaboration</strong> &mdash; Worked with clinicians, administrators, and IT staff to identify bottlenecks, design solutions, and train end-users for smooth adoption.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Senior SWE Renga -->
+          <div class="tl-item">
+            <div class="tl-dot" style="background:var(--accent2); box-shadow:0 0 8px rgba(123,47,255,0.5);"></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div>
+                  <div class="tl-role">Senior Software Engineer</div>
+                  <div class="tl-company">Renga Tech &mdash; Nairobi, Kenya</div>
+                </div>
+                <span class="tl-period">Jan 2025 &ndash; Jun 2025</span>
+              </div>
+              <ul>
+                <li><strong>Solichain</strong> &mdash; Architected and built a blockchain-enabled traceability platform, focusing on scalable data handling and secure transactions.</li>
+                <li><strong>Renga ERP</strong> &mdash; Led development of backend services and APIs for timesheet, CRM, and project-management modules.</li>
+                <li><strong>MEL Software</strong> &mdash; Developed Monitoring, Evaluation &amp; Learning software, improving data collection, analysis, and reporting accuracy across projects.</li>
+                <li><strong>Quality</strong> &mdash; Enforced code-quality standards through structured code reviews; mentored developers and championed Agile delivery.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Full Stack Renga -->
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div>
+                  <div class="tl-role">Full-Stack Software Engineer</div>
+                  <div class="tl-company">Renga Tech &mdash; Nairobi, Kenya</div>
+                </div>
+                <span class="tl-period">Jun 2022 &ndash; Dec 2024</span>
+              </div>
+              <ul>
+                <li><strong>Traceability System</strong> &mdash; Built the National Horticulture Traceability System with a Spring Boot backend and Angular web + Flutter mobile clients.</li>
+                <li><strong>Clinic Management</strong> &mdash; Designed and deployed a cloud-hosted MERN-stack Clinic Management System for reliable patient and staff management.</li>
+                <li><strong>Real-time Systems</strong> &mdash; Built and maintained the SOS Global System for SOS Children's Villages Rwanda with real-time monitoring features.</li>
+                <li>Delivered a scalable project-management platform with task-tracking and reporting; led projects end-to-end with on-time signoff.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Junior SWE Renga -->
+          <div class="tl-item">
+            <div class="tl-dot" style="background:var(--accent2); box-shadow:0 0 8px rgba(123,47,255,0.5);"></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div>
+                  <div class="tl-role">Junior Software Engineer</div>
+                  <div class="tl-company">Renga Tech &mdash; Nairobi, Kenya</div>
+                </div>
+                <span class="tl-period">Nov 2022 &ndash; May 2023</span>
+              </div>
+              <ul>
+                <li>Developed and maintained core functionality for the SOS Children's Global Project, ensuring reliability and efficiency.</li>
+                <li>Contributed to the National Horticulture Traceability System and Coffee Information &amp; Management Portal through development, testing, UAT, and deployment.</li>
+                <li>Worked with senior engineers to enforce best coding practices and strengthen system security; active in Agile sprints.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- KBC -->
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div>
+                  <div class="tl-role">Software Engineering Intern</div>
+                  <div class="tl-company">KBC &mdash; Nairobi, Kenya</div>
+                </div>
+                <span class="tl-period">Apr 2022 &ndash; Nov 2022</span>
+              </div>
+              <ul>
+                <li>Provided IT support, deployed solutions to cloud servers, and built data-driven applications.</li>
+                <li>Enhanced ERP systems for performance and reliability, and maintained the Election Management System codebase.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Karen Family Mart -->
+          <div class="tl-item">
+            <div class="tl-dot" style="background:var(--accent2); box-shadow:0 0 8px rgba(123,47,255,0.5);"></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div>
+                  <div class="tl-role">System Administrator (Consultant)</div>
+                  <div class="tl-company">Karen Family Mart &mdash; Nairobi, Kenya</div>
+                </div>
+                <span class="tl-period">Jul 2021 &ndash; Nov 2022</span>
+              </div>
+              <ul>
+                <li>Configured and maintained servers, storage, and backup systems, ensuring business continuity.</li>
+                <li>Integrated Microsoft Dynamics RMS with QuickBooks and optimised data systems for performance and accuracy.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Selected work highlights</p>
+
+        <div class="project-grid">
+
+          <div class="project-card">
+            <span class="project-period">2023 &ndash; 2025</span>
+            <h4>National Horticulture Traceability System</h4>
+            <p>End-to-end traceability platform for Kenya's horticulture sector — Spring Boot backend, Angular web client, and Flutter mobile app.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-period">2023 &ndash; 2024</span>
+            <h4>Solichain — Blockchain Traceability</h4>
+            <p>Blockchain-enabled supply-chain traceability platform with scalable data handling and secure transaction recording.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Blockchain</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-period">2022 &ndash; 2024</span>
+            <h4>Clinic Management System</h4>
+            <p>Cloud-hosted MERN-stack system for reliable patient and staff management, deployed on AWS.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">AWS</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-period">2022 &ndash; 2024</span>
+            <h4>SOS Global System</h4>
+            <p>Real-time monitoring and project management platform for SOS Children's Villages Rwanda.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Real-time</span>
+              <span class="skill-tag">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-period">2025 &ndash; Present</span>
+            <h4>LIMS — Lab Information Management</h4>
+            <p>Enhanced LIMS at Moi Teaching and Referral Hospital, reducing lab reporting turnaround time by ~30%.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Healthcare</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-period">Freelance</span>
+            <h4>SACCO Management System</h4>
+            <p>Full-featured cooperative management platform covering member registration, savings accounts, loan origination and repayment, and dividend calculations with a full audit trail.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag">REST API</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-period">Freelance</span>
+            <h4>Dairify Management System</h4>
+            <p>End-to-end dairy farm management system handling milk collection, quality grading, farmer payroll, supply-chain tracking, and analytics dashboards for farm managers.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag">Data Analytics</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-period">Freelance</span>
+            <h4>Troycity Financial System &amp; ERP</h4>
+            <p>Integrated financial management ERP encompassing accounts payable/receivable, general ledger, multi-currency support, financial reporting, and role-based access control.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Azure</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-period">Freelance</span>
+            <h4>Heal Junction ERP</h4>
+            <p>Healthcare ERP covering patient records, appointment scheduling, billing, pharmacy inventory, and clinical reporting — designed for multi-facility deployment.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Healthcare</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <span class="project-period">2019 &ndash; Present</span>
+            <h4>Freelance Websites</h4>
+            <p>End-to-end website development for multiple organisations: Karam Lagam Ltd, Keltakulta-Hoiva-Oy, Jamii, and others.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION ==================== -->
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic background</p>
+
+        <div class="timeline">
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div>
+                  <div class="tl-role">MSc, Artificial Intelligence</div>
+                  <div class="tl-company">The Open University of Kenya</div>
+                </div>
+                <span class="tl-period">Mar 2025 &ndash; Present</span>
+              </div>
+              <p style="font-size:0.9rem; color:var(--text-muted); margin:0;">
+                Coursework and research in machine learning, deep learning, NLP, and AI ethics.
+              </p>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot" style="background:var(--accent2); box-shadow:0 0 8px rgba(123,47,255,0.5);"></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div>
+                  <div class="tl-role">Software Engineering Programme</div>
+                  <div class="tl-company">Moringa School &mdash; Nairobi, Kenya</div>
+                </div>
+                <span class="tl-period">Jun 2024 &ndash; Feb 2025</span>
+              </div>
+              <p style="font-size:0.9rem; color:var(--text-muted); margin:0;">
+                Full-stack development with Python, Flask, SQL, JavaScript, React, and Redux.
+              </p>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-header">
+                <div>
+                  <div class="tl-role">BSc, Computer Science</div>
+                  <div class="tl-company">The Catholic University of Eastern Africa (CUEA) &mdash; Nairobi, Kenya</div>
+                </div>
+                <span class="tl-period">May 2019 &ndash; Aug 2024</span>
+              </div>
+              <p style="font-size:0.9rem; color:var(--text-muted); margin:0;">
+                Relevant coursework: Database Systems, Data Structures &amp; Algorithms, OOP, Distributed Systems,
+                Computer Networks, Web Development, Big Data Analysis, Software Project Management.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills &amp; Tools</h2>
+        <p class="section-subtitle">Technologies I work with</p>
+
+        <div class="skills-grid">
+
+          <div class="skill-category">
+            <h5>Front-End</h5>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">Redux</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">Flutter</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h5>Back-End</h5>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag">Java (Spring Boot)</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">Laravel</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h5>Databases</h5>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Firebase</span>
+              <span class="skill-tag">Schema Design</span>
+              <span class="skill-tag">Migrations</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h5>Cloud &amp; DevOps</h5>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Azure</span>
+              <span class="skill-tag">GCP</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">Traefik</span>
+              <span class="skill-tag">LetsEncrypt</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h5>AI &amp; Data Science</h5>
+            <div class="skill-tags">
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">Deep Learning</span>
+              <span class="skill-tag">NLP</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">Hadoop</span>
+              <span class="skill-tag">Scala</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h5>Practices &amp; Tools</h5>
+            <div class="skill-tags">
+              <span class="skill-tag">System Design</span>
+              <span class="skill-tag">Scalability</span>
+              <span class="skill-tag">Security</span>
+              <span class="skill-tag">Agile / Scrum</span>
+              <span class="skill-tag">Git &amp; GitHub</span>
+              <span class="skill-tag">Jira</span>
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Salesforce</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact">
+      <div class="container text-center">
+        <h2 class="section-title" style="display:block; text-align:center;">Get In Touch</h2>
+        <p class="section-subtitle">Open to new opportunities, collaborations, and remote roles.</p>
+
+        <a href="mailto:collinskandie1@gmail.com" class="hero-cta" style="margin-bottom:2.5rem; display:inline-block;">
+          <i class="fa-solid fa-paper-plane"></i>&nbsp; Say Hello
+        </a>
+
+        <div class="mt-4" style="display:flex; justify-content:center; gap:1.4rem; flex-wrap:wrap;">
+          <a href="https://github.com/collinskandie" target="_blank" title="GitHub" style="font-size:1.7rem; color:var(--text-muted);">
+            <i class="fa-brands fa-github"></i>
           </a>
-          <!-- Linkedin -->
-          <a href="https://www.linkedin.com/in/collins-kiptoo-0929b81aa/">
-            <img src="https://img.icons8.com/color/48/000000/linkedin.png" />
+          <a href="https://www.linkedin.com/in/collins-kiptoo-0929b81aa/" target="_blank" title="LinkedIn" style="font-size:1.7rem; color:var(--text-muted);">
+            <i class="fa-brands fa-linkedin"></i>
           </a>
-          <!-- Github -->
-          <a href="https://github.com/collinskandie">
-            <img src="https://img.icons8.com/fluent/48/000000/github.png" />
+          <a href="https://www.instagram.com/c.kandie_/" target="_blank" title="Instagram" style="font-size:1.7rem; color:var(--text-muted);">
+            <i class="fa-brands fa-instagram"></i>
           </a>
-          <!-- Resume -->
-          <a href="./collins_kiptoo.pdf">
-            <img
-              src="https://img.icons8.com/fluent/48/000000/open-resume.png"
-            />
-          </a>
-          <a href="https://collinskandie.com">
-            <i class="fa-sharp fa-light fa-globe-pointer"></i>
+          <a href="./Collins_Kiptoo_FullStack_CV.pdf" target="_blank" title="Download CV" style="font-size:1.7rem; color:var(--text-muted);">
+            <i class="fa-solid fa-file-pdf"></i>
           </a>
         </div>
-        <!-- Close Column 2 -->
-      </div>
 
-      <div class="col-md-6">
-        <!-- Faded Picture -->
-        <div class="circle">
-          <img src="IMG_4200.jpeg" />
-        </div>
-        <!-- <div class = "image-blurred-edge"></div> -->
+        <p style="margin-top:2rem; font-size:0.85rem; color:var(--text-muted);">
+          References available upon request.
+        </p>
       </div>
-    </div>
+    </section>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"
-    ></script>
-    <a href="https://icons8.com"></a>
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <p>Designed &amp; built by <a href="#">Collins Kipruto Kiptoo</a> &mdash; Nairobi, Kenya</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
-      (function (d) {
-        window["recime-bot"] =
-          '{"id":"d8571d81ff86dfd1721e67f77a8fa0d3","meta":{"user":{"Collins":"Pranav","lastName":"Kiptoo"}}}';
-        var s = d.createElement("script");
-        s.setAttribute("id", "recime-chatbot-script");
-        s.setAttribute("src", "https://headchat.recime.io/shim.js");
-        s.setAttribute("async", "async");
-        d.getElementsByTagName("body")[0].appendChild(s);
-      })(document);
+      (function () {
+        var btn   = document.getElementById('theme-toggle');
+        var icon  = document.getElementById('theme-icon');
+        var label = document.getElementById('theme-label');
+        var meta  = document.getElementById('theme-color-meta');
+
+        function applyTheme(theme) {
+          document.documentElement.setAttribute('data-theme', theme);
+          localStorage.setItem('theme', theme);
+          if (theme === 'dark') {
+            icon.className  = 'fa-solid fa-moon';
+            label.textContent = 'Dark';
+            meta.content    = '#0a0a0a';
+          } else {
+            icon.className  = 'fa-solid fa-sun';
+            label.textContent = 'Light';
+            meta.content    = '#f5f7fa';
+          }
+        }
+
+        // Sync button label with the theme that was already applied in <head>
+        var current = document.documentElement.getAttribute('data-theme') || 'light';
+        applyTheme(current);
+
+        btn.addEventListener('click', function () {
+          var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          applyTheme(next);
+        });
+
+        // If the user changes their OS theme while on the page, follow it (only if they haven't manually toggled)
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+          if (!localStorage.getItem('theme')) {
+            applyTheme(e.matches ? 'dark' : 'light');
+          }
+        });
+      })();
     </script>
+
   </body>
 </html>
